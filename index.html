@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Favicon shown at top of the website -->
+    <link rel="shortcut icon" href="./images/budget-icon.svg" type="image/x-icon">
+    <!--    Google font link    -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <!--    Link of css file    -->
+    <link rel="stylesheet" href="style.css">
+    <!--    Title of our website    -->
+    <title>Budget App</title>
+</head>
+
+<body>
+    <!--    Top div contain detail      -->
+    <div class="topDiv">
+        <!--    App heading with current month  -->
+        <h3>Availabel Budget in March 2020</h3>
+        <!--    App Icon    -->
+        <img src="./images/budget-icon.svg" alt="icon" width="80px" />
+        <!--    Total money left in pocket  -->
+        <h1>+ 50,000</h1>
+        <!--    Income Div  -->
+        <div class="display">
+            <div class="first">
+                <img src="./images/income.png" alt="income-Icon" width="30px" />
+                <h3 class="income">Income</h3>
+            </div>
+            <div class="incomeNumber">
+                <h3 style="color: rgb(18, 235, 18);">+12,000</h3>
+                <p style="color: rgb(18, 235, 18);">100%</p>
+            </div>
+        </div>
+        <!--    Expences Div    -->
+        <div class="display">
+            <div class="first">
+                <img src="./images/expance.png" alt="expence-Icon" width="30px" />
+                <h3 class="expence">Expences</h3>
+            </div>
+            <div class="expenceNumber">
+                <h3 style="color: rgb(253, 0, 0);">+22,000</h3>
+                <p style="color: rgb(253, 0, 0);">50%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="type">
+            <select>
+                <option value="income">Income</option>
+                <option value="expence">Expence</option>
+            </select>
+        </div>
+        <div class="description">
+            <img src="./images/description.png" alt="description" width="50px" />
+            <input placeholder="Description.." />
+        </div>
+        <div class="amount">
+            <img src="images/amount.png" alt="amountIcon" width="40px" />
+            <input placeholder="Amount" type="number" />
+        </div>
+        <button><img src="./images/calculate.png" alt="calculate-Icon" width="35px" /> Calculate</button>
+    </div>
+
+    <div class="searchMobile">
+        <div class="description">
+            <img src="./images/description.png" alt="description" width="50px" />
+            <input placeholder="Description.." />
+        </div>
+        <div class="amount">
+            <img src="images/amount.png" alt="amountIcon" width="40px" />
+            <input placeholder="Amount" type="number" />
+        </div>
+        <div class="button">
+            <select>
+                <option value="income">Income</option>
+                <option value="expence">Expence</option>
+            </select>
+            <button><img src="./images/calculate.png" alt="calculate-Icon" width="35px" /> Calculate</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

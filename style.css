@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(27, 25, 25);
+}
+body{
+    padding: 10px;
+    background: #ededed;
+}
+.topDiv{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url("https://image.freepik.com/free-vector/abstract-design-blue-background_23-2148497489.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.display{
+    background: #fff;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.first{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.display p{
+    padding: 5px;
+    background: #ededed;
+    border-radius: 10px;
+}
+.income, .expence{
+    width: 70%;
+}
+
+.topDiv h1{
+    padding: 10px;
+    background: #fff;
+    max-width: 200px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.description{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 0px 5px;
+    max-width: 350px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    margin: 0px 5px;
+}
+input{
+    width: 90%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+button{
+    border: 2px solid grey;
+    cursor: pointer;
+    background: #fff;
+    padding: 7px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 5px;
+}
+select{
+    width:150px;
+    background: #fff;
+    outline: none;
+    border: 2px solid grey;
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 4px 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 800px){
+    .search{
+        display: none;
+    }
+    .description{
+        width: 100%;
+        margin: 5px auto;
+    }
+    .amount{
+        width: 99%;
+        margin: 5px auto;
+    }
+    .button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 5px auto;
+    }
+    select{
+        width: 50%;
+    }
+    button{
+        width: 50%;
+    }
+}
